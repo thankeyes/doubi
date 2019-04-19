@@ -720,10 +720,12 @@ crontab_monitorip(){
 	fi
 }
 Add_iptables(){
+	echo 111
 	#iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport ${mtp_port} -j ACCEPT
 	#iptables -I INPUT -m state --state NEW -m udp -p udp --dport ${mtp_port} -j ACCEPT
 }
 Del_iptables(){
+	echo 22
 	#iptables -D INPUT -m state --state NEW -m tcp -p tcp --dport ${port} -j ACCEPT
 	#iptables -D INPUT -m state --state NEW -m udp -p udp --dport ${port} -j ACCEPT
 }
